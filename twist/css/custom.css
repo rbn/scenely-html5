@@ -1,0 +1,124 @@
+.hero-text-area { 
+background-color: rgba(61, 62, 81, 0.8);
+padding:25px 0px 35px 0px;
+border-radius: 25px;
+width:80%;
+margin:auto;
+}
+
+.getting-started-canvas {
+  background-color: rgba(61, 62, 81, .9);
+  padding:25px 25px;
+  border-radius: 25px;
+  width:80%;
+  margin:auto;
+}
+
+.what-image{
+  padding:0px 0px 20px 0px;
+}
+.what-image img {
+  max-height:200px;
+  border-radius:50%;
+  border: 5px solid #00ADB5;
+}
+
+
+.how-image{
+  padding:0px 0px 20px 0px;
+}
+.how-image img {
+  max-height:200px;
+  border-radius:50%;
+  border: 5px solid #00ADB5;
+}
+
+/* how */
+#fh5co-how {
+ background: #f2f2f2;
+}
+#fh5co-how .how-box {
+  border: 2px solid #ECEEF0;
+  text-align: center;
+  padding: 30px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 40px;
+  position: relative;
+}
+#fh5co-how .how-box.popular {
+  border: 2px solid #00ADB5;
+}
+#fh5co-how .how-box.popular .popular-text {
+  top: 0;
+  left: 50%;
+  margin-left: -65px;
+  margin-top: -2em;
+  position: absolute;
+  padding: 4px 20px;
+  background: #00ADB5;
+  color: #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+}
+#fh5co-how .how-box.popular .popular-text:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -10px;
+  border-top: 10px solid black;
+  border-top-color: #00ADB5;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+#fh5co-how .pricing-plan {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#fh5co-how .price {
+  font-size: 50px;
+  color: #000;
+}
+#fh5co-how .price .currency {
+  font-size: 20px;
+  top: -1.2em;
+}
+#fh5co-how .price small {
+  font-size: 16px;
+}
+#fh5co-how .pricing-info {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+#fh5co-how .pricing-info li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+/* how to become */
+.core-features  a.download {
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.5);
+  text-decoration: none !important;
+  bottom: 0;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 7px 10px;
+  line-height: 0;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  color:blue;
+}
+

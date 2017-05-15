@@ -1,0 +1,9 @@
+img.logo { max-width: 40px; max-height:40px; }
+a.logo { border-bottom:none; }
+header { margin-left: 20px; margin-top:10px; }
+
+#nav { display:none }
+
+
+img.hero-logo { max-width: 80px; max-height:80px; }
+a.hero-logo { border-bottom:none; }
