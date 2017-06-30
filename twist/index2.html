@@ -1,0 +1,1350 @@
+<!--[if lt IE 7]> <html lang="en" class="no-js oldie ie6"> <![endif]-->
+<!--[if IE 7 ]> <html lang="en" class="no-js oldie ie7"> <![endif]-->
+<!--[if IE 8 ]> <html lang="en" class="no-js oldie ie8"> <![endif]-->
+<!--[if (gt IE 8)|!(IE)]><!-->
+<html lang="en" class=" js touch js-enabled no-androidprejellybean"><!--<![endif]--><head>
+<meta charset="utf-8">
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script id="facebook-jssdk" src="//connect.facebook.net/en_US/sdk.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-TBRW96"></script><script type="text/javascript" async="" src="https://d24n15hnbwhuhn.cloudfront.net/libs/amplitude-3.0.1-min.gz.js"></script><script type="text/javascript">
+ (function(e,t){var n=e.amplitude||{_q:[],_iq:{}};var r=t.createElement("script");r.type="text/javascript";
+   r.async=true;r.src="https://d24n15hnbwhuhn.cloudfront.net/libs/amplitude-3.0.1-min.gz.js";
+   r.onload=function(){e.amplitude.runQueuedFunctions()};var i=t.getElementsByTagName("script")[0];
+   i.parentNode.insertBefore(r,i);function s(e,t){e.prototype[t]=function(){this._q.push([t].concat(Array.prototype.slice.call(arguments,0)));
+     return this}}var o=function(){this._q=[];return this};var a=["add","append","clearAll","prepend","set","setOnce","unset"];
+   for(var u=0;u<a.length;u++){s(o,a[u])}n.Identify=o;var c=function(){this._q=[];return this;
+   };var p=["setProductId","setQuantity","setPrice","setRevenueType","setEventProperties"];
+   for(var l=0;l<p.length;l++){s(c,p[l])}n.Revenue=c;var d=["init","logEvent","logRevenue","setUserId","setUserProperties","setOptOut","setVersionName","setDomain","setDeviceId","setGlobalUserProperties","identify","clearUserProperties","setGroup","logRevenueV2","regenerateDeviceId"];
+   function v(e){function t(t){e[t]=function(){e._q.push([t].concat(Array.prototype.slice.call(arguments,0)));
+   }}for(var n=0;n<d.length;n++){t(d[n])}}v(n);n.getInstance=function(e){e=(!e||e.length===0?"$default_instance":e).toLowerCase();
+     if(!n._iq.hasOwnProperty(e)){n._iq[e]={_q:[]};v(n._iq[e])}return n._iq[e]};e.amplitude=n;
+ })(window,document);
+
+ (function() {
+   var ampClient = amplitude.getInstance();
+   ampClient.init('fba429d66b3ad5d91b7154ad7ea6cfc5');
+
+   var userInfo = new amplitude.Identify()
+                               .set('community_id', 42748)
+                               .set('marketplace_uuid', '8ae79f70-26b4-11e7-93e8-0242ac110006')
+                               .set('admin', false);
+
+     userInfo.set('plan_status', 'active');
+
+
+   ampClient.identify(userInfo);
+
+
+ })();
+
+ (function(exports) {
+   exports.ampClient = {
+     logEvent: function(eventType, eventProperties, opt_callback) {
+         amplitude.getInstance().logEvent(eventType, eventProperties, opt_callback);
+     }
+   }
+ })(window);
+
+</script>
+
+
+<script>
+var dataLayer = dataLayer || [];
+(function(dl){
+  var marketplaceId = 42748;
+  if (marketplaceId) {
+    dl.push({"event": "identify", "id": "mp-"+marketplaceId+"-admin" });
+  }
+
+  dl.push({
+    event: 'feature flags',
+    featureFlags: ["topbar_v1"]
+  });
+
+})(dataLayer);
+
+<!-- Google Tag Manager -->
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TBRW96');
+<!-- End Google Tag Manager -->
+
+window.ST = window.ST || {};
+window.ST.gtmPush = function(data){
+  window.dataLayer = window.dataLayer || [];
+  if (Array.isArray(data)) {
+    Array.prototype.push.apply(window.dataLayer, data);
+  } else {
+    window.dataLayer.push(data);
+  }
+};
+
+
+window.ST = window.ST || {};
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','gaCustomer');
+
+(function(){
+  var communityGaKey = "UA-98533488-1";
+  var communityCookieDomain = "scene.ly";
+
+  gaCustomer('create', communityGaKey, 'auto', {'legacyCookieDomain': communityCookieDomain, 'allowLinker': true});
+  gaCustomer('send', 'pageview');
+})();
+
+ST.secondaryAnalyticsInUse = true;
+
+ST.customerReportEvent = function(category, action, opt_label) {
+  if (typeof gaCustomer === 'function'){
+    gaCustomer('send', 'event', category, action, opt_label);
+  }
+};
+
+
+</script>
+
+<style>
+  @import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&subset=latin-ext);
+</style>
+<style type="text/css">
+ /**
+  * The fonts included are copyrighted by the vendor listed below.
+  *
+  * Vendor:      Mark Simonson Studio
+  * License URL: https://www.fontspring.com/licenses/mark-simonson-studio/webfont
+  *
+  *
+  */
+
+
+ @font-face {
+   /* 'ProximaNovaSoft-Regular' */
+   font-family: 'Proxima Nova Soft';
+   src: url('https://assets-sharetribecom.sharetribe.com/webfonts/proximanovasoft/proximanovasoft-regular-webfont.eot');
+   src: url('https://assets-sharetribecom.sharetribe.com/webfonts/proximanovasoft/proximanovasoft-regular-webfont.eot?#iefix') format('embedded-opentype'),
+   url('https://assets-sharetribecom.sharetribe.com/webfonts/proximanovasoft/proximanovasoft-regular-webfont.woff2') format('woff2'),
+   url('https://assets-sharetribecom.sharetribe.com/webfonts/proximanovasoft/proximanovasoft-regular-webfont.woff') format('woff'),
+   url('https://assets-sharetribecom.sharetribe.com/webfonts/proximanovasoft/proximanovasoft-regular-webfont.ttf') format('truetype'),
+   url('https://assets-sharetribecom.sharetribe.com/webfonts/proximanovasoft/proximanovasoft-regular-webfont.svg#proxima_nova_softregular') format('svg');
+   font-weight: 400;
+   font-style: normal;
+ }
+
+ @font-face {
+   /* 'ProximaNovaSoft-Medium' */
+   font-family: 'Proxima Nova Soft';
+   src: url('https://assets-sharetribecom.sharetribe.com/webfonts/proximanovasoft/proximanovasoft-medium-webfont.eot');
+   src: url('https://assets-sharetribecom.sharetribe.com/webfonts/proximanovasoft/proximanovasoft-medium-webfont.eot?#iefix') format('embedded-opentype'),
+   url('https://assets-sharetribecom.sharetribe.com/webfonts/proximanovasoft/proximanovasoft-medium-webfont.woff2') format('woff2'),
+   url('https://assets-sharetribecom.sharetribe.com/webfonts/proximanovasoft/proximanovasoft-medium-webfont.woff') format('woff'),
+   url('https://assets-sharetribecom.sharetribe.com/webfonts/proximanovasoft/proximanovasoft-medium-webfont.ttf') format('truetype'),
+   url('https://assets-sharetribecom.sharetribe.com/webfonts/proximanovasoft/proximanovasoft-medium-webfont.svg#proxima_nova_softmedium') format('svg');
+   font-weight: 500;
+   font-style: normal;
+ }
+
+ @font-face {
+   /* 'ProximaNovaSoft-Semibold' */
+   font-family: 'Proxima Nova Soft';
+   src: url('https://assets-sharetribecom.sharetribe.com/webfonts/proximanovasoft/proximanovasoft-semibold-webfont.eot');
+   src: url('https://assets-sharetribecom.sharetribe.com/webfonts/proximanovasoft/proximanovasoft-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+   url('https://assets-sharetribecom.sharetribe.com/webfonts/proximanovasoft/proximanovasoft-semibold-webfont.woff2') format('woff2'),
+   url('https://assets-sharetribecom.sharetribe.com/webfonts/proximanovasoft/proximanovasoft-semibold-webfont.woff') format('woff'),
+   url('https://assets-sharetribecom.sharetribe.com/webfonts/proximanovasoft/proximanovasoft-semibold-webfont.ttf') format('truetype'),
+   url('https://assets-sharetribecom.sharetribe.com/webfonts/proximanovasoft/proximanovasoft-semibold-webfont.svg#proxima_nova_softsemibold') format('svg');
+   font-weight: 600;
+   font-style: normal;
+ }
+
+ @font-face {
+   /* 'ProximaNovaSoft-Bold' */
+   font-family: 'Proxima Nova Soft';
+   src: url('https://assets-sharetribecom.sharetribe.com/webfonts/proximanovasoft/proximanovasoft-bold-webfont.eot');
+   src: url('https://assets-sharetribecom.sharetribe.com/webfonts/proximanovasoft/proximanovasoft-bold-webfont.eot?#iefix') format('embedded-opentype'),
+   url('https://assets-sharetribecom.sharetribe.com/webfonts/proximanovasoft/proximanovasoft-bold-webfont.woff2') format('woff2'),
+   url('https://assets-sharetribecom.sharetribe.com/webfonts/proximanovasoft/proximanovasoft-bold-webfont.woff') format('woff'),
+   url('https://assets-sharetribecom.sharetribe.com/webfonts/proximanovasoft/proximanovasoft-bold-webfont.ttf') format('truetype'),
+   url('https://assets-sharetribecom.sharetribe.com/webfonts/proximanovasoft/proximanovasoft-bold-webfont.svg#proxima_nova_softbold') format('svg');
+   font-weight: 700;
+   font-style: normal;
+ }
+</style>
+
+<meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport">
+<meta content="website" property="og:type">
+<meta content="en" http-equiv="content-language">
+<meta content="summary" name="twitter:card">
+<!-- Additional meta tags for SEO, etc. -->
+
+<title>scene.ly - Practice for Professionals</title>
+<meta content="scene.ly - Practice for Professionals" property="og:title">
+<meta content="scene.ly - Practice for Professionals" name="twitter:title">
+<meta content="scene.ly" name="author">
+<meta content="practice, professionals" name="keywords">
+<meta content="https://coaches.scene.ly/" property="og:url">
+<meta content="https://coaches.scene.ly" name="identifier-url">
+<meta content="scene.ly" name="copyright">
+<meta content="https://coaches.scene.ly/" name="twitter:url">
+<meta content="scene.ly" property="og:site_name">
+<meta content="Hire peers, colleagues, and mentors to practice for your next interview, pitch, or presentation - Practice for Professionals" name="description">
+<meta content="Hire peers, colleagues, and mentors to practice for your next interview, pitch, or presentation - Practice for Professionals" property="og:description">
+<meta content="Hire peers, colleagues, and mentors to practice for your next interview, pitch, or presentation - Practice for Professionals" name="twitter:description">
+<meta content="https://assets0.sharetribe.com/assets/sharetribe_icon-0e9cdbfa42c2d9d951e61d6e168397fc.png" property="og:image">
+<meta content="https://assets0.sharetribe.com/assets/sharetribe_icon-0e9cdbfa42c2d9d951e61d6e168397fc.png" name="twitter:image">
+<link href="https://coaches.scene.ly/" rel="canonical">
+<meta content="en_US" property="og:locale">
+<meta content="259923321141198" property="fb:app_id">
+<!-- CSS -->
+<link rel="stylesheet" media="screen" href="https://assets1.sharetribe.com/assets/application-02684d28b2b524173de32b98b03aae9f.css">
+
+<style>
+  button,.button,.big-button,.inline-big-button,.tribe-actions,.marketplace-lander button.action-button,.noUi-connect,.pagination .current,.toggle-menu a:hover,.toggle-menu .toggle-menu-link:hover,.badge,.enabled-book-button,.disabled-book-button,.message-book-button,.listing-shape-delete-button { background: #4a90e2; }
+  button:hover,.button:hover,.big-button:hover,.inline-big-button:hover,.tribe-actions a:hover,.marketplace-lander button.action-button:hover,.home-toolbar-button-group-button:hover,.home-toolbar-show-filters-button:hover,.enabled-book-button:hover,.disabled-book-button:hover,.message-book-button:hover,.listing-shape-delete-button:hover { background: #3483de; }
+  button:active,.button:active,.big-button:active,.inline-big-button:active,.home-toolbar-button-group-button:active,.home-toolbar-show-filters-button:active,.enabled-book-button:active,.disabled-book-button:active,.message-book-button:active,.listing-shape-delete-button:active { background: #2275d7; }
+  .feed-actions .request-link,.view-item .listing-icons a:hover,.pagination a,a,.checkbox-option-checkmark { color: #4a90e2; }
+  .feed-actions .request-link:hover,a:hover { color: #1f69c1; }
+  .marketplace-lander figure.marketplace-cover { background-image: url("https://user-assets.sharetribe.com/images/communities/cover_photos/42748/hd_header/full_image_3_dark.jpg?1494941321"); }
+  .marketplace-lander figure.marketplace-cover-small { background-image: url("https://user-assets.sharetribe.com/images/communities/small_cover_photos/42748/hd_header/full_image_3_thin_blurred.jpg?1494943796"); }
+  .marketplace-lander .marketplace-lander-content-title { color: #ffffff; }
+  .marketplace-lander .marketplace-lander-content-description { color: #ffffff; }
+  .datepicker table tr td.active:hover,.datepicker table tr td.active:hover:hover,.datepicker table tr td.active.disabled:hover,.datepicker table tr td.active.disabled:hover:hover,.datepicker table tr td.active:focus,.datepicker table tr td.active:hover:focus,.datepicker table tr td.active.disabled:focus,.datepicker table tr td.active.disabled:hover:focus,.datepicker table tr td.active:active,.datepicker table tr td.active:hover:active,.datepicker table tr td.active.disabled:active,.datepicker table tr td.active.disabled:hover:active,.datepicker table tr td.active.active,.datepicker table tr td.active:hover.active,.datepicker table tr td.active.disabled.active,.datepicker table tr td.active.disabled:hover.active,.open .dropdown-toggle.datepicker table tr td.active,.open .dropdown-toggle.datepicker table tr td.active:hover,.open .dropdown-toggle.datepicker table tr td.active.disabled,.open .dropdown-toggle.datepicker table tr td.active.disabled:hover,.datepicker table tr td.day.range,.datepicker table tr td.day.selected { background-color: #4a90e2; }
+  .datepicker table tr td.day:hover,.datepicker table tr td.day.range:hover,.datepicker table tr td.day.range:hover:hover,.datepicker table tr td.day.selected:hover,.datepicker table tr td.day.selected:hover:hover { background-color: #3483de; }
+  a:active { color: #185195; }
+  .toggle-menu a.login-form:hover,.toggle-menu .toggle-menu-item.login-form:hover,.toggle-menu .login-form.toggle-menu-title:hover { color: #a2c6f0; }
+  .new-listing-link { background: #2ab865; }
+  .new-listing-link:hover { background: #25a35a; }
+  .new-listing-link:active { background: #218e4e; }
+  .header-wide-logo { background-image: url("https://user-assets.sharetribe.com/images/communities/wide_logos/42748/header/word-logo.png?1494890597"); }
+  .header-square-logo { background-image: url("/logos/header_icon/missing.png"); }
+  .home-toolbar-button-group-button.selected,.home-toolbar-show-filters-button.selected { background-color: #4a90e2; border-color: #2275d7; }
+  @media (min-width: 48em) {
+  .feed-actions .request-link,.view-item .button,.view-profile .button,.view-profile .add-profile-picture-link { background: #4a90e2; }
+  .feed-actions .request-link:hover,.view-item .button:hover,.view-profile .button:hover { background: #3483de; }
+  .feed-actions .request-link:active,.view-item .button:active,.view-profile .button:active,.view-profile .add-profile-picture-link:hover { background: #2275d7; }
+  .feed-map-link a.map-link:hover { color: #4a90e2; }
+  }
+  @media (-webkit-min-device-pixel-ratio: 1.5) {
+  .header-wide-logo { background-image: url("https://user-assets.sharetribe.com/images/communities/wide_logos/42748/header_highres/word-logo.png?1494890597"); }
+  .header-square-logo { background-image: url("/logos/header_icon_highres/missing.png"); }
+  }
+  @media (min-resolution: 144dpi) {
+  .header-wide-logo { background-image: url("https://user-assets.sharetribe.com/images/communities/wide_logos/42748/header_highres/word-logo.png?1494890597"); }
+  .header-square-logo { background-image: url("/logos/header_icon_highres/missing.png"); }
+  }
+</style>
+
+<link rel="stylesheet" media="screen" href="https://assets0.sharetribe.com/assets/app-bundle-29d5a6c4a7108cb4342220d1e7cc93ac.css">
+<!-- Modernizr, in the head tag, right after stylesheets, for best performance: -->
+<script src="https://assets1.sharetribe.com/assets/modernizr.min-75333b3fcd9b26aada3b1e9fd39bc5a0.js"></script>
+<!-- Detect if JS is enabled. duplicate of what Modernizr is doing, but we plan to get rid of Modernizr at some point. -->
+<script>
+  document.documentElement.className += ' js-enabled';
+</script>
+<!-- Android pre Jellybean has an ugly bug, which prevents font-size 0 technique from -->
+<!-- removing the spaces between inline-blocks. Remove this piece of code when pre Jellybean becomes unsupported -->
+<script>
+  Modernizr.addTest('androidPreJellybean', function(){
+    var ua = navigator.userAgent;
+    if( ua.indexOf("Android") >= 0 ) {
+      var androidversion = parseFloat(ua.slice(ua.indexOf("Android")+8));
+      return androidversion < 4.1
+    }
+  });
+</script>
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="twJCJ6JEDliYhfaD7RrbTkKlKr1VnBVuEtcYYHMzTFcmL2udmGCtcoH6Kja5ZdmmRbbJez/9mamV3z8FyBzCtw==">
+<link href="https://assets0.sharetribe.com/assets/sharetribe_icon-0e9cdbfa42c2d9d951e61d6e168397fc.png" rel="image_src">
+<link href="https://user-assets.sharetribe.com/images/communities/favicons/42748/favicon/circle-s.png?1494463394" rel="shortcut icon">
+<link href="/logos/apple_touch/missing.png" rel="apple-touch-icon-precomposed">
+<link rel="alternate" type="application/atom+xml" title="ATOM" href="https://coaches.scene.ly/listings.atom?locale=en">
+  <style>
+  /* custom nav */
+  
+  /* .Topbar a[data-pid="About 0"] { display: none; } */
+  .Topbar a[data-pid="Invite new members 2"]  { display: none; }  
+  .MenuSection a[href="/invitations/new"] { display:none }
+  
+  .home-fluid-thumbnail-grid-author {display:none;}
+  
+  .marketplace-lander .marketplace-title-header h1 { color: #fff !important;} 
+  
+
+  /* end custom nav */
+  
+  .marketplace-lander .coverimage-fade  { background:rgba(62, 40, 173, 0.3) !important; }
+  
+  /* .no-cover-photo.page-content {display: block; } */
+
+  
+  .marketplace-lander p {
+      font-size: 1.625em;
+      line-height: 1.38462em;
+      font-weight: 100;
+      margin: 0.75em auto;
+      max-width: 22.5em;
+  } 
+
+  .marketplace-lander .marketplace-lander-content-title {
+      margin-bottom: 0;
+      margin-top: 0;
+      font-size: 3.2em;
+      line-height: 1.05882em;
+      font-weight: 100;
+      line-height: 0.9375em;
+  }
+
+
+  div#host-disclaimer { color:#000; border: 3px solid #CCC;  padding: 8px; background-color:fff; padding-left:15px; width:100%;}
+
+  div#host-disclaimer > h2 {
+    font-variant: small-caps;
+    font-size:18px;
+  }
+
+  div#host-disclaimer p {
+    font-size:14px;
+  }
+
+  div#host-disclaimer ul {
+    font-size:12px;
+  }
+
+  
+
+  div.quantity-description { display: none; }
+
+  .price-container > label:after { content: " per 15 minutes"; }
+
+  label[for="listing_title"]:after { content: " (please put your first name and role you think best describes you)"; }
+
+  label[for="listing_description"]:before { content: "Brief Bio: "; }
+  label[for="listing_description"]:after { content: " of how you can help a peer or colleague prepare "; }
+
+  label[for="listing_image"]:before { content: "Profile "; }
+  label[for="listing_image"]:after { content: "(recommended to be a headshot photo of you) "; }
+
+  label[for="listing_origin"]:before { content: "Your "; }
+  label[for="listing_origin"]:after { content: " (so people know where you are based out of.  You will still hold your video scene virtually)"; }
+
+  .fileinput-button:nth-of-type(1n+2) { display:none; }
+
+  .bullet { font-weight: bold }
+  .bullet-description { font-style:italic; }
+
+  div.title-container { padding: 20px; }
+
+  .marketplace-banner-span-1 { color: white; font-weight: bold; font-size:36px; font-family: "Arial Black" }
+  .marketplace-banner-span-2 { color: white; font-weight: bold; font-size:24px; font-family: "Arial" }
+
+  .info-bullet-header img {
+    float: left;
+    width: 80px;
+    height: 80px;
+    display: inline;
+    padding-right:10px;
+    padding-bottom:10px;
+  }
+
+  .info-bullet-header h2 {
+    position: relative;
+    top:10px;
+  }
+
+  .info-bullet-content p {
+  }
+  
+  .club-bullet-header {
+    vertical-align:center;
+  }
+  
+  .club-bullet-header img {
+    float: left;
+    max-width: 2.4em;
+    max-height: 2.4em;
+    display: inline;
+    padding-right:10px;
+    padding-bottom:10px;
+  }
+
+  div.how-to-list {
+    width: 100%;
+    margin: 10px  
+  }
+
+  ol.how-to-list {
+    margin-left:20px;
+    color: #243147;
+    list-style-type: none;
+  }
+
+  ol.how-to-list li {
+    position: relative;
+    font: bold italic 30px/1.5 Helvetica, Verdana, sans-serif;
+    margin-bottom: 10px;
+  }
+
+  ol.how-to-list li > p {
+    font: 14px/1.5 Helvetica, sans-serif;
+    padding-left: 60px;
+    color: #555;
+  }
+   
+  ol.how-to-list span.number {
+    position: absolute;
+  }
+
+  ol.how-to-list span.leader {
+    font-size:18px;
+    font-weight:bold;
+    padding-right:10px;
+    color: #243147;
+  }
+
+  .reasons-cover {
+    padding-top: 35px;
+    padding-bottom: 15px;
+}
+.reason {
+    float: left;
+    width: 17%;
+    margin: 0 1.5%;
+    height: auto;
+    text-align: center;
+    line-height: 26px
+}
+.reason strong {
+    display: block;
+    margin-bottom: 8px
+}
+
+  .use-cover {
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+  .how-cover {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    height:auto;
+}
+
+  .five-cover {
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+  .scene-cover {
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.icon-hexagon-clock {
+    width: 55px;
+    height: 55px;
+    top: -4px;
+    position: relative
+}
+
+h2.centered {
+    padding-bottom: 20px;
+    max-width: 700px;
+    width: 95%;
+    text-align: center;
+    margin: 0 auto 40px;
+    font-size:2em;
+}
+h2.centered.tablet,
+h2.centered.mobile {
+    display: none
+}
+
+h6.reasons,
+h6.stories-title {
+    text-align: center;
+    margin: 0 auto 50px;
+    padding-bottom: 30px
+}
+
+h6 {
+    font-family: "Gilroy-Medium", "Helvetica", "Arial", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 0.03em;
+    color: #323232;
+    font-size: 13px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #CCC
+}
+
+.icon-hexagon-bg {
+    height: auto;
+    margin-bottom: 5px;
+    background: url("https://www.sharetribe.com/images/svg/hexagon.36556566.svg") no-repeat center center
+}
+
+.icon-nonhex-bg {
+    height: auto;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.icon-arrow-bg {
+    height: auto;
+    margin-bottom: 0px;
+}
+
+.icon-hexagon {
+    width: 55px;
+    height: 170px;
+    top: -4px;
+    position: relative
+}
+
+.icon-hexagon-find {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+    position: relative;
+    /* filter:grayscale(100%); */
+
+}
+
+.main-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 200px;
+   display: block;
+}
+
+.main-use-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+}
+
+.main-how-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+}
+
+.main-five-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+}
+
+.main-scene-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+}
+
+.main-footer-wrapper {
+    max-width: 100%
+    margin: 0 auto;
+    position: relative;
+}
+
+.main-copyright-wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding:40px 80px 0px 80px;
+    display: block;
+}
+
+.reasons-cover {
+    padding-top: 80px;
+    padding-bottom: 200px;
+     display: block;
+}
+
+.page-content { margin-top:25px; display: block; }
+
+/* div[class^='SearchBar'] {
+    display:none;  
+} */
+
+.listing-author-avatar { display:none; }
+.listing-author-details { min-height:1em;margin-bottom:.375em;padding-left:0; }
+.listing-author-name { line-height:1em; height:auto; }
+
+.Topbar > a.AddNewListingButton { display:none }
+
+.OffScreenMenu > a.AddNewListingButton { display:none }
+
+a.home-categories-main[href="/?category=all"] { display:none; }
+
+
+footer li {
+    /* font-family: "Gilroy-Regular", "Helvetica", "Arial", sans-serif; */
+    font-weight: normal;
+    font-style: normal;
+    list-style-type: none;
+    display: inline;
+    font-size: 15px;
+    padding-right: 45px;
+}
+
+footer a, footer a:hover, footer a:active, footer a:visited { color: white; }
+
+.footer-cover {
+    padding: 45px 0px 0px 0px;
+    width: 100%;
+    max-height:600px;
+    background-color: #0d1e3a;
+}
+.copyright {
+    padding: 20px 43px 45px 0;
+    width: 100%;
+    background-color: #6f747a;
+}
+
+.footer {
+    text-align: center;
+    padding-bottom: 100px;
+    width: 100%;
+}
+
+.footer-logo {
+  max-width:2em;
+  max-height:2em;
+}
+
+
+ .home-categories-main   {
+   background-color: #ccddff;
+    line-height: 2em;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 20px;
+ }
+ 
+.home-categories-main.selected {
+   background-color: silver;
+   color:white;
+ }
+  </style>
+
+  <script src="https://apis.google.com/js/platform.js" async="" defer="" gapi_processed="true"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+   
+
+
+<meta content="JUqB3tYmezYEJNAkw8MUdmIocAGztY85eaoNKBD5j0Q" name="google-site-verification">
+<style type="text/css">.CalendarDay {
+  position: relative;
+  display: table;
+  height: 100%;
+  width: 100%; }
+
+.CalendarDay__day {
+  display: table-cell;
+  vertical-align: middle;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none; }
+
+.CalendarMonth {
+  text-align: center;
+  padding: 0 13px;
+  vertical-align: top; }
+  .CalendarMonth:first-of-type {
+    position: absolute;
+    z-index: -1;
+    opacity: 0; }
+  .CalendarMonth table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+
+.CalendarMonth--horizontal {
+  display: inline-block;
+  min-height: 100%; }
+
+.CalendarMonth--vertical {
+  display: block; }
+
+.CalendarMonth__caption {
+  color: #3c3f40;
+  margin-top: 7px;
+  font-size: 18px;
+  padding: 15px 0 35px;
+  text-align: center;
+  margin-bottom: 2px; }
+
+.CalendarMonth__day {
+  border: 1px solid #e4e7e7;
+  padding: 0;
+  box-sizing: border-box;
+  color: #565a5c;
+  cursor: pointer;
+  width: 39px;
+  height: 38px; }
+  .CalendarMonth__day:active {
+    background: #f2f2f2; }
+
+.CalendarMonth__day--outside {
+  border: 0;
+  cursor: default; }
+  .CalendarMonth__day--outside:active {
+    background: #fff; }
+
+.CalendarMonth__day--hovered {
+  background: #e4e7e7;
+  border: 1px double #d4d9d9;
+  color: inherit; }
+
+.CalendarMonth__day--blocked-minimum-nights {
+  color: #cacccd;
+  background: #fff;
+  border: 1px solid #e4e7e7;
+  cursor: default; }
+  .CalendarMonth__day--blocked-minimum-nights:active {
+    background: #fff; }
+
+.CalendarMonth__day--selected-span {
+  background: #66e2da;
+  border: 1px double #33dacd;
+  color: #fff; }
+  .CalendarMonth__day--selected-span.CalendarMonth__day--hovered, .CalendarMonth__day--selected-span:active {
+    background: #33dacd;
+    border: 1px double #00a699; }
+  .CalendarMonth__day--selected-span.CalendarMonth__day--last-in-range {
+    border-right: #00a699; }
+
+.CalendarMonth__day--hovered-span,
+.CalendarMonth__day--after-hovered-start {
+  background: #b2f1ec;
+  border: 1px double #80e8e0;
+  color: #007a87; }
+
+.CalendarMonth__day--selected-start,
+.CalendarMonth__day--selected-end,
+.CalendarMonth__day--selected {
+  background: #00a699;
+  border: 1px double #00a699;
+  color: #fff; }
+  .CalendarMonth__day--selected-start:active,
+  .CalendarMonth__day--selected-end:active,
+  .CalendarMonth__day--selected:active {
+    background: #00a699; }
+
+.CalendarMonth__day--blocked-calendar {
+  background: #cacccd;
+  color: #82888a;
+  cursor: default; }
+  .CalendarMonth__day--blocked-calendar:active {
+    background: #cacccd; }
+
+.CalendarMonth__day--blocked-out-of-range {
+  color: #cacccd;
+  background: #fff;
+  border: 1px solid #e4e7e7;
+  cursor: default; }
+  .CalendarMonth__day--blocked-out-of-range:active {
+    background: #fff; }
+
+.CalendarMonthGrid {
+  background: #fff;
+  z-index: 0; }
+
+.CalendarMonthGrid--animating {
+  transition: transform 0.2s ease-in-out;
+  z-index: 1; }
+
+.CalendarMonthGrid--horizontal {
+  position: absolute;
+  left: 9px;
+  width: 1200px; }
+
+.CalendarMonthGrid--vertical {
+  width: 300px;
+  margin: 0 auto; }
+
+.DayPicker {
+  background: #fff;
+  position: relative; }
+
+.DayPicker--horizontal {
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(0, 0, 0, 0.07);
+  border-radius: 3px; }
+  .DayPicker--horizontal.DayPicker--portal {
+    box-shadow: none;
+    position: absolute;
+    left: 50%;
+    top: 50%; }
+
+.DayPicker--vertical.DayPicker--portal {
+  position: initial; }
+
+.DayPicker__week-headers {
+  position: relative; }
+
+.DayPicker__week-header {
+  color: #757575;
+  position: absolute;
+  top: 62px;
+  z-index: 2;
+  text-align: left; }
+  .DayPicker__week-header ul {
+    list-style: none;
+    margin: 1px 0;
+    padding-left: 0; }
+  .DayPicker__week-header li {
+    display: inline-block;
+    width: 39px;
+    text-align: center; }
+
+.DayPicker--horizontal .DayPicker__week-header {
+  padding: 0 22px 0 13px; }
+  .DayPicker--horizontal .DayPicker__week-header:first-of-type {
+    padding: 0 13px 0 22px; }
+
+.DayPicker--vertical .DayPicker__week-header {
+  margin-left: -150px;
+  padding: 0 13px;
+  width: 300px;
+  left: 50%; }
+
+.transition-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px; }
+
+.transition-container--horizontal {
+  transition: height 0.2s ease-in-out; }
+
+.transition-container--vertical {
+  width: 100%; }
+
+.DayPickerNavigation__prev,
+.DayPickerNavigation__next {
+  cursor: pointer;
+  line-height: 0.78;
+  user-select: none;
+  -webkit-user-select: none;
+  /* Chrome/Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+ */ }
+
+.DayPickerNavigation__prev--default,
+.DayPickerNavigation__next--default {
+  border: 1px solid #dce0e0;
+  background-color: #fff;
+  color: #757575; }
+  .DayPickerNavigation__prev--default:focus, .DayPickerNavigation__prev--default:hover,
+  .DayPickerNavigation__next--default:focus,
+  .DayPickerNavigation__next--default:hover {
+    border: 1px solid #c4c4c4; }
+  .DayPickerNavigation__prev--default:active,
+  .DayPickerNavigation__next--default:active {
+    background: #f2f2f2; }
+
+.DayPickerNavigation--horizontal {
+  position: relative; }
+  .DayPickerNavigation--horizontal .DayPickerNavigation__prev,
+  .DayPickerNavigation--horizontal .DayPickerNavigation__next {
+    border-radius: 3px;
+    padding: 6px 9px;
+    top: 18px;
+    z-index: 2;
+    position: absolute; }
+  .DayPickerNavigation--horizontal .DayPickerNavigation__prev {
+    left: 22px; }
+  .DayPickerNavigation--horizontal .DayPickerNavigation__next {
+    right: 22px; }
+  .DayPickerNavigation--horizontal .DayPickerNavigation__prev--default svg,
+  .DayPickerNavigation--horizontal .DayPickerNavigation__next--default svg {
+    height: 19px;
+    width: 19px;
+    fill: #82888a; }
+
+.DayPickerNavigation--vertical {
+  background: #fff;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 52px;
+  width: 100%;
+  z-index: 2; }
+  .DayPickerNavigation--vertical .DayPickerNavigation__prev,
+  .DayPickerNavigation--vertical .DayPickerNavigation__next {
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    width: 50%; }
+  .DayPickerNavigation--vertical .DayPickerNavigation__next--default {
+    border-left: 0; }
+  .DayPickerNavigation--vertical .DayPickerNavigation__prev--default,
+  .DayPickerNavigation--vertical .DayPickerNavigation__next--default {
+    text-align: center;
+    font-size: 2.5em;
+    padding: 5px; }
+    .DayPickerNavigation--vertical .DayPickerNavigation__prev--default svg,
+    .DayPickerNavigation--vertical .DayPickerNavigation__next--default svg {
+      height: 42px;
+      width: 42px;
+      fill: #484848; }
+
+.DateInput {
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 24px;
+  color: #757575;
+  margin: 0;
+  padding: 8px;
+  background: #fff;
+  position: relative;
+  display: inline-block;
+  width: 130px;
+  vertical-align: middle; }
+
+.DateInput--with-caret::before,
+.DateInput--with-caret::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: auto;
+  border: 10px solid transparent;
+  border-top: 0;
+  left: 22px;
+  z-index: 2; }
+
+.DateInput--with-caret::before {
+  top: 62px;
+  border-bottom-color: rgba(0, 0, 0, 0.1); }
+
+.DateInput--with-caret::after {
+  top: 63px;
+  border-bottom-color: #fff; }
+
+.DateInput--disabled {
+  background: #cacccd; }
+
+.DateInput__label {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.DateInput__input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+  height: 100%;
+  width: 100%; }
+
+.DateInput__display-text {
+  padding: 4px 8px;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.DateInput__display-text--has-input {
+  color: #484848; }
+
+.DateInput__display-text--focused {
+  background: #99ede6;
+  border-color: #99ede6;
+  border-radius: 3px;
+  color: #007a87; }
+
+.DateInput__display-text--disabled {
+  font-style: italic; }
+
+.screen-reader-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.DateRangePicker {
+  position: relative;
+  display: inline-block; }
+
+.DateRangePicker__picker {
+  z-index: 1;
+  background-color: #fff;
+  position: absolute;
+  top: 72px; }
+
+.DateRangePicker__picker--show {
+  visibility: visible; }
+
+.DateRangePicker__picker--invisible {
+  visibility: hidden; }
+
+.DateRangePicker__picker--direction-left {
+  left: 0; }
+
+.DateRangePicker__picker--direction-right {
+  right: 0; }
+
+.DateRangePicker__picker--portal {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%; }
+
+.DateRangePicker__picker--full-screen-portal {
+  background-color: #fff; }
+
+.DateRangePicker__close {
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15px;
+  z-index: 2; }
+  .DateRangePicker__close svg {
+    height: 15px;
+    width: 15px;
+    fill: #cacccd; }
+  .DateRangePicker__close:hover, .DateRangePicker__close:focus {
+    color: #b0b3b4;
+    text-decoration: none; }
+
+.DateRangePickerInput {
+  background-color: #fff;
+  border: 1px solid #cacccd;
+  display: inline-block; }
+
+.DateRangePickerInput--disabled {
+  background: #cacccd; }
+
+.DateRangePickerInput__arrow {
+  display: inline-block;
+  vertical-align: middle; }
+
+.DateRangePickerInput__arrow svg {
+  vertical-align: middle;
+  fill: #484848;
+  height: 24px;
+  width: 24px; }
+
+.DateRangePickerInput__clear-dates {
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px;
+  margin: 0 10px 0 5px; }
+
+.DateRangePickerInput__clear-dates svg {
+  fill: #82888a;
+  height: 12px;
+  width: 15px;
+  vertical-align: middle; }
+
+.DateRangePickerInput__clear-dates--hide {
+  visibility: hidden; }
+
+.DateRangePickerInput__clear-dates:focus,
+.DateRangePickerInput__clear-dates--hover {
+  background: #dbdbdb;
+  border-radius: 50%; }
+
+.SingleDatePicker {
+  position: relative;
+  display: inline-block; }
+
+.SingleDatePicker__picker {
+  z-index: 1;
+  background-color: #fff;
+  position: absolute;
+  top: 72px; }
+
+.SingleDatePicker__picker--show {
+  visibility: visible; }
+
+.SingleDatePicker__picker--invisible {
+  visibility: hidden; }
+
+.SingleDatePicker__picker--direction-left {
+  left: 0; }
+
+.SingleDatePicker__picker--direction-right {
+  right: 0; }
+
+.SingleDatePicker__picker--portal {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%; }
+
+.SingleDatePicker__picker--full-screen-portal {
+  background-color: #fff; }
+
+.SingleDatePicker__close {
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15px;
+  z-index: 2; }
+  .SingleDatePicker__close svg {
+    height: 15px;
+    width: 15px;
+    fill: #cacccd; }
+  .SingleDatePicker__close:hover, .SingleDatePicker__close:focus {
+    color: #b0b3b4;
+    text-decoration: none; }
+
+.SingleDatePickerInput {
+  background-color: #fff;
+  border: 1px solid #dbdbdb; }
+
+.SingleDatePickerInput__clear-date {
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px;
+  margin: 0 10px 0 5px; }
+
+.SingleDatePickerInput__clear-date svg {
+  fill: #82888a;
+  height: 12px;
+  width: 15px;
+  vertical-align: middle; }
+
+.SingleDatePickerInput__clear-date--hide {
+  visibility: hidden; }
+
+.SingleDatePickerInput__clear-date:focus,
+.SingleDatePickerInput__clear-date--hover {
+  background: #dbdbdb;
+  border-radius: 50%; }
+</style><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(http://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(http://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(http://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(http://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(http://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(http://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(http://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(http://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(http://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(http://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(http://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(http://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style></head>
+
+<body class="SearchBar__topLevelBody__2_hhm" style="touch-action: manipulation;">
+<div id="sidewinder-wrapper">
+<div id="js-react-on-rails-context" style="display:none" data-rails-context="{&quot;inMailer&quot;:false,&quot;i18nLocale&quot;:&quot;en&quot;,&quot;i18nDefaultLocale&quot;:&quot;en&quot;,&quot;href&quot;:&quot;https://coaches.scene.ly/&quot;,&quot;location&quot;:&quot;/&quot;,&quot;scheme&quot;:&quot;https&quot;,&quot;host&quot;:&quot;coaches.scene.ly&quot;,&quot;port&quot;:null,&quot;pathname&quot;:&quot;/&quot;,&quot;search&quot;:null,&quot;httpAcceptLanguage&quot;:&quot;en-US,en;q=0.8&quot;,&quot;marketplaceId&quot;:42748,&quot;loggedInUsername&quot;:null,&quot;marketplace_color1&quot;:&quot;#4a90e2&quot;,&quot;marketplace_color2&quot;:&quot;#2ab865&quot;,&quot;marketplace_slogan_color&quot;:&quot;#ffffff&quot;,&quot;marketplace_description_color&quot;:&quot;#ffffff&quot;,&quot;serverSide&quot;:false}"></div>
+
+<noscript>
+&lt;div class='noscript-padding'&gt;
+&lt;/div&gt;
+</noscript>
+<div class="js-react-on-rails-component" style="display:none" data-component-name="TopbarApp" data-props="{&quot;logo&quot;:{&quot;href&quot;:&quot;/&quot;,&quot;text&quot;:&quot;scene.ly&quot;,&quot;image&quot;:&quot;https://user-assets.sharetribe.com/images/communities/wide_logos/42748/header/word-logo.png?1494890597&quot;,&quot;image_highres&quot;:&quot;https://user-assets.sharetribe.com/images/communities/wide_logos/42748/header_highres/word-logo.png?1494890597&quot;},&quot;search&quot;:{&quot;search_placeholder&quot;:&quot;&quot;,&quot;mode&quot;:&quot;keyword&quot;},&quot;search_path&quot;:&quot;/&quot;,&quot;menu&quot;:{&quot;links&quot;:[{&quot;link&quot;:&quot;/&quot;,&quot;title&quot;:&quot;Home&quot;,&quot;priority&quot;:-1},{&quot;link&quot;:&quot;/infos/about&quot;,&quot;title&quot;:&quot;About&quot;,&quot;priority&quot;:0},{&quot;link&quot;:&quot;/user_feedbacks/new&quot;,&quot;title&quot;:&quot;Contact us&quot;,&quot;priority&quot;:1},{&quot;link&quot;:&quot;/invitations/new&quot;,&quot;title&quot;:&quot;Invite new members&quot;,&quot;priority&quot;:2}],&quot;limit_priority_links&quot;:-1},&quot;locales&quot;:{&quot;current_locale_ident&quot;:&quot;en&quot;,&quot;current_locale&quot;:&quot;en&quot;,&quot;available_locales&quot;:[{&quot;locale_name&quot;:&quot;English&quot;,&quot;locale_ident&quot;:&quot;en&quot;,&quot;change_locale_uri&quot;:&quot;/en/&quot;}]},&quot;avatarDropdown&quot;:{&quot;avatar&quot;:{&quot;image&quot;:null,&quot;givenName&quot;:&quot;Removed user&quot;,&quot;familyName&quot;:null}},&quot;newListingButton&quot;:{&quot;text&quot;:&quot;Become a coach&quot;},&quot;i18n&quot;:{&quot;locale&quot;:&quot;en&quot;,&quot;defaultLocale&quot;:&quot;en&quot;},&quot;marketplace&quot;:{&quot;marketplace_color1&quot;:&quot;#4a90e2&quot;,&quot;location&quot;:&quot;/&quot;},&quot;user&quot;:{&quot;loggedInUsername&quot;:null,&quot;isAdmin&quot;:false},&quot;unReadMessagesCount&quot;:0}" data-trace="false" data-dom-id="topbar-container"></div>
+    <div id="topbar-container"><div class="Topbar Topbar__topbar__7GUWt" data-reactroot="" data-reactid="1" data-react-checksum="1452274768"><div class="Topbar__topbarMobileMenu__3z-JE MenuMobile MenuMobile__menuMobile___Ivzx Topbar__topbarMobileMenu__3z-JE" tabindex="0" data-reactid="2"><div style="background-color:#4a90e2;" class="MenuMobile_overlay MenuMobile__overlay__2sZqq" data-reactid="3"></div><div class="MenuLabelMobile MenuMobile__menuLabelMobile__3uXwZ " data-reactid="4"><span class="MenuMobile__menuLabelMobileIcon__14XBz" title="Menu" data-reactid="5"><svg width="18" height="12" viewBox="18 19 18 12" xmlns="http://www.w3.org/2000/svg"><g fill="#34495E" fill-rule="evenodd" transform="translate(18 19)"><rect width="18" height="2" rx="1"></rect><rect y="5" width="18" height="2" rx="1"></rect><rect y="10" width="18" height="2" rx="1"></rect></g></svg></span></div><div class="OffScreenMenu MenuMobile__offScreenMenu__2fKaS" data-reactid="6"><div class="OffScreenMenu_scrollpane MenuMobile__scrollPane__2VvXd" data-reactid="7"><div class="OffScreenMenu_header MenuMobile__offScreenHeader__KnANh" data-reactid="8"><div class="LoginLinks LoginLinks__links__z-Tnd" data-reactid="9"><a class="Link__link__3pNRT LoginLinks__link__1GboG" href="/en/signup" style="color:#4a90e2;" data-reactid="10">Sign up</a><a class="Link__link__3pNRT LoginLinks__link__1GboG" href="/en/login" style="color:#4a90e2;" data-reactid="11">Log in</a></div></div><div class="OffScreenMenu_main MenuMobile__offScreenMain__1ruzb" data-reactid="12"><div class="MenuSection MenuMobile__menuSection__gD-As" data-reactid="13"><div class="MenuSection_title MenuMobile__menuSectionTitle__2HlQg" data-reactid="14">Menu</div><div class="MenuItem MenuItem__menuitem__3_-l_  MenuMobile__menuSectionMenuItem__2yMLC" data-reactid="15"><span class="MenuItem__activeIndicator__2AB6n" style="background-color:#4a90e2;" data-reactid="16"></span><a class="MenuItem_link MenuItem__menuitemLink__2Eedg MenuMobile__menuSectionMenuItemLink__GfyW6" href="/" style="color:#4a4a4a;" data-reactid="17">Home</a></div><div class="MenuItem MenuItem__menuitem__3_-l_  MenuMobile__menuSectionMenuItem__2yMLC" data-reactid="18"><a class="MenuItem_link MenuItem__menuitemLink__2Eedg MenuMobile__menuSectionMenuItemLink__GfyW6" href="http://coaches.scene.ly" style="color:#4a90e2;" data-reactid="19">Marketplace</a></div><div class="MenuItem MenuItem__menuitem__3_-l_  MenuMobile__menuSectionMenuItem__2yMLC" data-reactid="20"><a class="MenuItem_link MenuItem__menuitemLink__2Eedg MenuMobile__menuSectionMenuItemLink__GfyW6" href="/user_feedbacks/new" style="color:#4a90e2;" data-reactid="21">Contact us</a></div><div class="MenuItem MenuItem__menuitem__3_-l_  MenuMobile__menuSectionMenuItem__2yMLC" data-reactid="22"><a class="MenuItem_link MenuItem__menuitemLink__2Eedg MenuMobile__menuSectionMenuItemLink__GfyW6" href="/invitations/new" style="color:#4a90e2;" data-reactid="23">Invite new members</a></div></div><!-- react-empty: 24 --></div><div class="OffScreenMenu_footer MenuMobile__offScreenFooter__3sjuV" data-reactid="25"></div></div></div></div><a class="Logo Topbar__topbarLogo__2_AjG Logo__logo__3sGgU" href="http://scene.ly#scene-cats" style="color:#4a90e2;" data-reactid="26"><img src="https://user-assets.sharetribe.com/images/communities/wide_logos/42748/header/word-logo.png?1494890597" alt="scene.ly" class="Logo__logoImage__3oOkB" srcset="https://user-assets.sharetribe.com/images/communities/wide_logos/42748/header_highres/word-logo.png?1494890597 2x" data-reactid="27"></a><div class="Topbar__topbarMediumSpacer__cbOwg" data-reactid="28"></div><div class="SearchBar__root__2hIPj" data-reactid="29"><button class="SearchBar__mobileToggle__3pjye" data-reactid="30"><div data-reactid="31"><svg width="17" height="17" viewBox="336 14 17 17" xmlns="http://www.w3.org/2000/svg"><g opacity=".7" fill="none" fill-rule="evenodd" transform="matrix(-1 0 0 1 352 15)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M11 11l3.494 3.494"></path><circle cx="6" cy="6" r="6"></circle></g></svg>
+</div><span class="SearchBar__mobileToggleArrow__25aBI" style="border-bottom-color:transparent;" data-reactid="32"></span></button><form style="background-color:transparent;" class="SearchBar__form__27PQI" data-reactid="33"><input type="search" class="SearchBar__keywordInput__2HTav" placeholder="Search..." data-reactid="34"><button type="submit" class="SearchBar__searchButton__1Ck2b" style="background-color:transparent;" data-reactid="35"><svg width="17" height="17" viewBox="336 14 17 17" xmlns="http://www.w3.org/2000/svg"><g opacity=".7" fill="none" fill-rule="evenodd" transform="matrix(-1 0 0 1 352 15)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M11 11l3.494 3.494"></path><circle cx="6" cy="6" r="6"></circle></g></svg>
+</button><span class="SearchBar__focusContainer__2uI0-" data-reactid="36"></span></form></div><div class="Topbar__topbarMenuSpacer__3hqBi" data-reactid="37"><div class="MenuPriority MenuPriority__menuPriority__3y3Pu MenuPriority__isMeasured__12Xiw" data-reactid="38"><div class="MenuPriority__priorityLinks__XgHdH" style="width: 320px;" data-reactid="39"><a data-pid="About 0" class="MenuPriority__priorityLink__moBbL" href="http://coaches.scene.ly" data-reactid="40">Marketplace</a><a data-pid="Contact us 1" class="MenuPriority__priorityLink__moBbL" href="/user_feedbacks/new" data-reactid="41">Contact us</a><a data-pid="Invite new members 2" class="MenuPriority__priorityLink__moBbL" href="/invitations/new" data-reactid="42">Invite new members</a></div></div></div><div class="LoginLinks LoginLinks__links__z-Tnd Topbar__topbarLinks__CCME8" data-reactid="59"><a class="Link__link__3pNRT LoginLinks__link__1GboG" href="/en/signup" style="color:#4a90e2;" data-reactid="60">Sign up</a><a class="Link__link__3pNRT LoginLinks__link__1GboG" href="/en/login" style="color:#4a90e2;" data-reactid="61">Log in</a></div><a class="Topbar__topbarListingButton__2SNl8 AddNewListingButton AddNewListingButton__button__2H8yh AddNewListingButton__responsiveLayout__1JnL9" href="/user_feedbacks/new" title="Become a coach" data-reactid="62"><span class="AddNewListingButton__backgroundContainer__4Nn3Z AddNewListingButton_background" style="background-color:#4a90e2;" data-reactid="63"></span><span class="AddNewListingButton__mobile__2JhHF AddNewListingButton_mobile" style="color:#4a90e2;" data-reactid="64">+ Become a coach</span><span class="AddNewListingButton__desktop__17Luf AddNewListingButton_desktop" data-reactid="65">+ Become a coach</span></a></div></div>
+    
+
+<form id="homepage-filters" method="get">
+<input type="hidden" name="view" id="view" value="grid">
+<section class="marketplace-lander"><div class="coverimage"><figure class="marketplace-cover fluidratio"><div class="lander-content marketplace-lander-content"><h1 class="marketplace-lander-content-title">Ask the questions you are afraid to ask</h1><p id="call-to-action" class="marketplace-lander-content-description" style="font-size:1.2em">Find someone doing what you want to do and make a scene<div id="find-coach" style="padding-top:15px;"><a id="find-coach" class="MenuMobile__offScreenHeaderNewListingButton__3ssaA AddNewListingButton AddNewListingButton__button__2H8yh" href="https://coaches.scene.ly/en/signup" title="Make a scene" data-reactid="12" style="width: 400px;"><span class="AddNewListingButton__backgroundContainer__4Nn3Z AddNewListingButton_background" style="background-color: rgb(0, 204, 122); display: inline; max-width:18em;" data-reactid="13"></span><span class="AddNewListingButton__mobile__2JhHF AddNewListingButton_mobile" style="color: rgb(255, 255, 255); font-size:.8em;font-weight:200;max-width:18em;" data-reactid="14">Sign up to receive your free scene</span><span class="AddNewListingButton__desktop__17Luf AddNewListingButton_desktop" data-reactid="15">Sign up to receive your free scene</span></a></div></p></div></figure></div></section>
+<article class="page-content">
+<div class="wrapper">
+
+<div class="row">
+<div class="col-12">
+<div class="home-fluid-thumbnail-grid-narrow">
+<div class="home-fluid-thumbnail-grid">
+<div class="home-fluid-thumbnail-grid-item">
+<div>
+<div>
+<a class=" fluid-thumbnail-grid-image-item-link" href="#"><div class="fluid-thumbnail-grid-image-image-container">
+<img alt="---" class=" fluid-thumbnail-grid-image-image" src="./images/interview.jpg">
+
+</div>
+</a>
+<div class="home-fluid-thumbnail-grid-author">
+<div class="home-fluid-thumbnail-grid-author-avatar">
+<a href="/en/topher"><img class="home-fluid-thumbnail-grid-author-avatar-image" src="https://user-assets.sharetribe.com/images/people/images/PbxNmD_ft9ZQ8gpClpDW4Q/thumb/Topher_Square.jpg?1495803818" alt="Topher square">
+</a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="home-fluid-thumbnail-grid-item">
+<div>
+<div>
+<a class=" fluid-thumbnail-grid-image-item-link" href="#"><div class="fluid-thumbnail-grid-image-image-container">
+<img alt="---" class=" fluid-thumbnail-grid-image-image" src="./images/interview.jpg">
+
+</div>
+</a>
+<div class="home-fluid-thumbnail-grid-author">
+<div class="home-fluid-thumbnail-grid-author-avatar">
+<a href="/en/topher"><img class="home-fluid-thumbnail-grid-author-avatar-image" src="https://user-assets.sharetribe.com/images/people/images/PbxNmD_ft9ZQ8gpClpDW4Q/thumb/Topher_Square.jpg?1495803818" alt="Topher square">
+</a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="home-fluid-thumbnail-grid-item">
+<div>
+<div>
+<a class=" fluid-thumbnail-grid-image-item-link" href="#"><div class="fluid-thumbnail-grid-image-image-container">
+<img alt="---" class=" fluid-thumbnail-grid-image-image" src="./images/interview.jpg">
+
+</div>
+</a>
+<div class="home-fluid-thumbnail-grid-author">
+<div class="home-fluid-thumbnail-grid-author-avatar">
+<a href="/en/topher"><img class="home-fluid-thumbnail-grid-author-avatar-image" src="https://user-assets.sharetribe.com/images/people/images/PbxNmD_ft9ZQ8gpClpDW4Q/thumb/Topher_Square.jpg?1495803818" alt="Topher square">
+</a></div>
+<a class="home-fluid-thumbnail-grid-author-name" title="Improv Connects" href="/en/topher">Improv Connects
+</a></div>
+</div>
+</div>
+</div>
+
+<div id="pageless-loader" style="display:none;text-align:center;width:100%;">  <div class="msg" style="color:#e9e9e9;font-size:2em">Loading more content</div>  <img src="https://s3.amazonaws.com/sharetribe/assets/ajax-loader-grey.gif" alt="loading more results" style="margin:10px auto"></div></div>
+</div>
+<div class="home-loading-more">
+
+
+</div>
+</div>
+</div>
+
+</div>
+</article>
+
+</form>
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="https://staticxx.facebook.com/connect/xd_arbiter/r/0F7S7QWJ0Ac.js?version=42#channel=f1e744aaa3eaaa8&amp;origin=https%3A%2F%2Fcoaches.scene.ly" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+<script>
+window.fbAsyncInit = function() {
+<!-- / init the FB JS SDK -->
+FB.init({
+appId      : '259923321141198', // Community App ID if availble or else the one from the app dashboard
+channelUrl : '//coaches.scene.ly/channel.html', // Channel file for x-domain comms
+status     : false,                                 // Check Facebook Login status
+xfbml      : true,                                  // Look for social plugins on the page
+version    : 'v2.8'
+});
+<!-- / Additional initialization code such as adding Event Listeners goes here -->
+};
+<!-- / Load the SDK asynchronously -->
+(function(d, s, id){
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) {return;}
+js = d.createElement(s); js.id = id;
+js.src = "//connect.facebook.net/en_US/sdk.js";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+<script>
+  window.I18n = {};
+</script>
+<script src="https://assets0.sharetribe.com/assets/i18n/en-ad79ad9c4339d8aab550cc5072532aaa.js"></script>
+<script src="https://assets3.sharetribe.com/assets/application-79e97512dd16221f5b5d391c02f1aefa.js"></script>
+<script>
+  window.ST.jsonTranslations = {
+    "please_wait": "Please wait...",
+    "validation_messages": {
+      "accept": "The image file must be either in GIF, JPG or PNG format.",
+      "creditcard": "Please enter a valid credit card number.",
+      "date": "Please enter a valid date.",
+      "dateISO": "Please enter a valid date (ISO).",
+      "digits": "Please enter only digits.",
+      "email": "Please enter a valid email address.",
+      "equalTo": "Please enter the same value again.",
+      "max": "Please enter a value less than or equal to {0}.",
+      "maxlength": "Please enter no more than {0} characters.",
+      "min": "Please enter a value greater than or equal to {0}.",
+      "minlength": "Please enter at least {0} characters.",
+      "number": "Please enter a valid number.",
+      "range": "Please enter a value between {0} and {1}.",
+      "rangelength": "Please enter a value between {0} and {1} characters long.",
+      "remote": "Please fix this field.",
+      "required": "This field is required.",
+      "url": "Please enter a valid URL.",
+      "address_validator": "The location was not found.",
+      "money": "You need to insert a valid monetary value.",
+      "night_selected": "You need to select at least one night",
+      "availability_range": "The selected range includes dates that are not available",
+      "min_bound": "Please enter a value less than max value ({0})",
+      "max_bound": "Please enter a value more than min value ({0})",
+      "number_no_decimals": "Please enter a whole number",
+      "number_decimals": "Please enter a valid number with either dot (.) or comma (,) as a decimal separator"
+    }
+  }
+</script>
+<script>
+  $(function() {
+    if ('touchAction' in document.body.style) {
+      document.body.style.touchAction = 'manipulation';
+    } else {
+      window.FastClick.attach(document.body, { excludeNode: '^pac-'} );
+    }
+  });
+</script>
+<script>
+//<![CDATA[
+$('.home-fluid-thumbnail-grid').pageless({"currentPage":1,"totalPages":1,"url":"/","loaderMsg":"Loading more content","targetDiv":".home-fluid-thumbnail-grid"});
+//]]>
+</script>
+<script>
+  $(document).ready(function() { initialize_defaults("en"); initialize_homepage();
+   });
+</script>
+<noscript>
+&lt;div class='noscript'&gt;
+&lt;div class='wrapper'&gt;
+&lt;h2&gt;Javascript is disabled in your browser&lt;/h2&gt;
+&lt;p&gt;scene.ly does not work properly without javascript. Try to enable javascript from your browser's preferences and then reload this page again.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</noscript>
+
+</div>
+
+</body></html>
